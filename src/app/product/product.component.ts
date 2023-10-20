@@ -10,7 +10,8 @@ export class ProductComponent {
   product = {
     name: "Motorola Edge 40",
     price: 32000,
-    gst: 40
+    gst: 40,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwEREEDqKLKxGzNMqFPbrdKqYhbjfJ0fi591eYGZ0&s"
   }
 
   calculatePrice(){
