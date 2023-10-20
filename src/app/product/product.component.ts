@@ -11,7 +11,8 @@ export class ProductComponent {
     name: "Motorola Edge 40",
     price: 32000,
     gst: 40,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwEREEDqKLKxGzNMqFPbrdKqYhbjfJ0fi591eYGZ0&s"
+    // image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwEREEDqKLKxGzNMqFPbrdKqYhbjfJ0fi591eYGZ0&s",
+    image: "./assets/mobilePhoneA.jpg"
   }
 
   calculatePrice(){
