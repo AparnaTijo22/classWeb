@@ -9,3 +9,38 @@
 <h3>Product GST: {{product.gst}}</h3>
 <!-- <h3>Total price: {{product.gst + product.price}}</h3> -->
 <h3>Total price: {{calculatePrice()}}</h3>
+<!-- <h3>In stock: {{product.inStock > 0 ? (product.inStock + " items left") : "Out of stock"}}</h3> -->
+
+<h3 *ngIf="product.inStock > 0; else elseblock">
+    {{product.inStock + " items left"}}
+</h3>
+
+<ng-template #elseblock>
+<h3>Out of stock</h3>
+</ng-template>
+
+<h3>Quantity:  
+<button (click)="decreaseQuantity()">-</button>
+{{quantity}}
+<button (click)="increaseQuantity()">+</button>
+</h3>
+
+<button [disabled]="(product.inStock==0)">Buy Now</button>
+<input (mouseover)="changeproductname()" (mouseout)="changeproductname2()" type="text" value="{{product.name}}">
+
+
+<!-- <button [ngStyle]="{'background-color': product.inStock>0 ? 'hotpink' : 'gray', 'color': 'white'}">Deliver to this address</button> -->
+<button [ngStyle]="applyStyle()">Deliver to this address</button>
+
+
+<!--? EXPO  -->
+<!-- <ul>
+    <li *ngFor="let item of reviewList">
+        {{item.name}}
+    </li>
+</ul> -->
+<!--? EXPO  -->
+
+<h3 *ngFor="let x of reviewList">
+    {{x.name}}------> {{x.review}}
+</h3>
