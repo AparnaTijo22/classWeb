@@ -12,7 +12,7 @@ import { PipeComponent } from './pipe/pipe.component';
     AppComponent,
     HomeComponent,
     ProductComponent,
-    PipeComponent
+    PipeComponent,
   ],
   imports: [
     BrowserModule
