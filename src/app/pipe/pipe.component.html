@@ -13,3 +13,19 @@
 <b>{{currentDate | date:'longDate'}}</b><br>
 <b>{{currentDate | date:'shortTime'}}</b><br>
 <b>{{currentDate | date:'dd/MM/yyyy'}}</b><br>
+
+<h1>Json Pope</h1>
+<b>{{emp | json}}</b>
+
+<h1>Decimal Pipe</h1>
+<b>{{ 278.89 | number: '4.5'}}</b>
+
+<h1>Currency Pipe</h1>
+<b>{{6589.23 | currency:"USD"}}</b><br>
+<b>{{6589.23 | currency:"INR"}}</b><br>
+<b>{{6589.23 | currency:"GBP"}}</b><br>
+<b>{{6589.23 | currency:"EUR"}}</b><br>
+
+
+<h1>Percent Pipe</h1>
+<b>{{00.7645 | percent}}</b>
