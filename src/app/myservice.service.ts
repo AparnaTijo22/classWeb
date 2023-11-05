@@ -1,9 +1,5 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class MyserviceService {
-
-  constructor() { }
+export class myservice {
+    OnClicked(){
+      alert("Hello World!");
+    }
 }
